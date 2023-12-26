@@ -1,0 +1,559 @@
+/* Variable */
+:root {
+    --color-text: #101518;
+    --color-text-button: #fdfdfe;
+    --color-background-button: #B7CADB;
+    --grap-element: 15px;
+    --grap-part: 20px;
+    --grap-part-name: 17.5px;
+    --height-icon: 1.5rem
+}
+
+/* Base */
+* {
+    box-sizing: border-box;
+    line-height: 1;
+    font-family: 'Quicksand Regular';
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    color: var(--color-text);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* CSS */
+.page {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: rgb(216, 216, 216);
+    padding: 3px;
+}
+
+.container {
+    background-color: white;
+    width: 793.700787px;
+    height: 1122.519685px;
+    padding: 40px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+    -webkit-animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.header {
+    display: flex;
+    gap: var(--grap-element);
+    justify-content: space-between;
+}
+
+.header .info .name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header .info .position {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.header .info .contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.header .info .contact .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header .contact .item .item_icon {
+    padding-right: 3px;
+    font-size: 18px;
+    transform: translateY(0.8px);
+}
+
+.header .contact .item .item_content {
+    font-size: 15px;
+    margin-left: 5px;
+}
+.border {
+    border-bottom: 1px solid gray;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-part);
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-part-name);
+}
+.part .title {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: "Saira Bold";
+    letter-spacing: 3px;
+    position: relative;
+}
+.part .title::after{
+    content: '';
+    display: block;
+    position: relative;
+    width: 60px;
+    bottom: -6px;
+    right: 0;
+    border: 1.5px solid var(--color-text);
+    border-radius: 1.5px;
+}
+.part .content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+
+.skills .skills_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--grap-element);
+}
+
+.skills .skills_group .skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.skills .skills_group .skill .skill_icon {
+    height: var(--height-icon);
+    padding-right: 5px;
+}
+
+
+/* EXPERIENCS */
+.experiences {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+
+.experiences .experience {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+
+.experiences .experience .position_time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.experiences .experience .position_time .position {
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+.experiences .experience .position_time .time {
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+.experiences .experience .description_tasks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+
+.experiences .experience .description_tasks .tasks {
+    list-style: circle;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+.projects .project {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+
+.projects .project .logo_name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.projects .project .logo_name .logo {
+    height: var(--height-icon);
+    padding-right: 5px;
+}
+
+.projects .project .logo_name .name {
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+.projects .project .description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+
+.projects .project .description .description_functions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--grap-element);
+}
+.projects .project .description .description_functions .function {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.projects .project .description .description_functions .function .function_icon {
+    height: var(--height-icon);
+    padding-right: 5px;
+}
+
+.projects .project .project_info {
+    list-style: circle;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+
+
+/* EDUCATION */
+.content .educations {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+.content .educations .education {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grap-element);
+}
+
+.content .educations .education .major_time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content .educations .education .major_time .major {
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+.content .educations .education .major_time .time {
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+.content .educations .education .school {
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+.content .educations .education .gpa {
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+
+/* Dots Line */
+.dots_line {
+    flex: 1;
+    margin: 0 5px;
+    border-bottom: 1px dotted var(--color-text);
+}
+
+/* DOWNLOAD PDF */
+#download_pdf {
+    position: fixed;
+    top: 30px;
+    z-index: 10;
+    right: 30px;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+#download_pdf_vi {
+    position: fixed;
+    top: 80px;
+    z-index: 10;
+    right: 30px;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+#download_pdf:hover,
+#download_pdf_vi:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+#translate {
+    position: fixed;
+    z-index: 10;
+    top: 133px;
+    right: 30px;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #f0f0f0;
+    font-size: 15px; 
+}
+
+.translate {
+    padding: 10px;
+}
+
+
+@media (min-width: 740px) and (max-width: 800px) {
+    * {
+        line-height: 1.5;
+    }
+    .page {
+        padding: 0;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    #download_pdf {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 739px) {
+    :root {
+        --grap-part: 15px;
+        --grap-part-name: 14.5px;
+        --grap-element: 10px;
+        --height-icon: 1rem
+    }
+    * {
+        line-height: 1.5;
+    }
+    .page {
+        padding: 0;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .header .name {
+        font-size: 45px;
+        transform: 'unset';
+    }
+    .header .contact {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--grap-element);
+    }
+    .header .position {
+        line-height: 1;
+    }
+
+    .part .title {
+        font-size: 20px;
+    }
+    .part .title::after{
+        bottom: -4px;
+    }
+
+    .skills .skills_group {
+        flex-wrap: wrap;
+    }
+    
+    .experiences .experience .position_time .position {
+        margin-right: 10px;
+    }
+
+    .experiences .experience .position_time .time {
+        white-space: nowrap; 
+    }
+
+    .experiences .experience .description_tasks .tasks {
+        margin-left: 20px;
+    }
+
+    .projects .project .description .description_functions {
+       flex-wrap: wrap;
+    }
+
+    .educations .education .major_time .major {
+        margin-right: 10px;
+    }
+    
+    .educations .education .major_time .time {
+        white-space: nowrap;
+        line-height: 1.5;
+    }
+    
+    #download_pdf, #download_pdf_vi, #translate { 
+        position: absolute;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    #download_pdf {
+        top: 20.8%;
+        right: 61%;
+    }
+
+    #download_pdf_vi {
+        top: 24%;
+        right: 61%;
+    }
+
+    #translate {
+        top: 15%;
+        right: 60.8%;
+    }
+}
+
+
+@font-face {
+    font-family: 'MixcaseMixed';
+    src: local('MixcaseMixed'), url('../assets/font/MixcaseMixed.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Madera W01 Light';
+    src: local('Madera W01 Light'), url('../assets/font/Madera\ W01\ Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Quicksand Light';
+    src: local('Quicksand Light'), url('../assets/font/Quicksand-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Quicksand Bold';
+    src: local('Quicksand Bold'), url('../assets/font/Quicksand-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Quicksand Regular';
+    src: local('Quicksand Regular'), url('../assets/font/Quicksand-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Quicksand SemiBold';
+    src: local('Quicksand SemiBold'), url('../assets/font/Quicksand-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Quicksand Medium';
+    src: local('Quicksand Medium'), url('../assets/font/Quicksand-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Saira Bold';
+    src: local('Saira Bold'), url('../assets/font/Saira-Bold.ttf') format('truetype');
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-9-27 9:36:17
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-in-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-in-top {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-top {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+  }
+  

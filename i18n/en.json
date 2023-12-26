@@ -1,0 +1,42 @@
+{
+  "label": "Choose a language",
+  "name": "NGUYEN MINH TRUNG NGHIA",
+  "position": "Web Developer",
+  "hometown": "Ba Ria - Vung Tau Province",
+  "phone": "(+84) 934 945 803",
+  "skills": "skills",
+  "experience": "EXPERIENCE",
+  "education": "EDUCATION",
+  "project": "PROJECT",
+  "cvt_company": "Full Stack Developer - CVT TECHNOLOGY COMPANY LIMITED",
+  "cvt_tasks": "Do the tasks below for business website of CVT TECHNOLOGY COMPANY LIMITED:",
+  "cvt_task": {
+    "$0": "Discuss with the customer that the function wants to develop.",
+    "$1": "Feature analysis needs to be developed with team members.",
+    "$2": "Database design.",
+    "$3": "User interface design using React.",
+    "$4": "Write APIs and combine the testers to test the APIs.",
+    "$5": "Incorporates the front-end team that defines the APIs."
+  },
+  "miho_company": "Wordpress Development - MIHO TRADING SERVICE COMPANY LIMITED",
+  "miho_task": {
+    "$0": "Build product advertising website and portfolio using Wordpress and extension plugins.",
+    "$1": "Support issues related to technology systems such as printers, computers, hardware, software errors, install software...",
+    "$2": "Introduce and advise customers on products"
+  },
+  "miho_company_description": "Some sites have been developed and operated in a product environment:",
+  "hutechquiz_description": "Building an online multiple-choice test system for review content of Ho Chi Minh City University of Technology - Hutech. Includes several functions:",
+  "cvt_time": "Jan 2023 - Present",
+  "miho_time": "June 2022 - Dec 2022",
+  "practice_test": "Practice Test",
+  "document_sharing": "Document Sharing",
+  "admin_function": "Admin Function",
+  "hutechquiz_database": "Database: Postgresql",
+  "achievements": "Achievements",
+  "information_technology": "Information Technology",
+  "hutech_name": "Ho Chi Minh City University of Technology (HUTECH University)",
+  "hutech_3rd_startup": "3rd Prize in Hutech Startup Wings",
+  "hutech_final_gottalent": "Entered the final round of Hutech IT Got Talent",
+  "download_pdf_en": "Download PDF - English",
+  "download_pdf_vi": "Download PDF - Vietnamese"
+}
