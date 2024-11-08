@@ -3,9 +3,9 @@ const downloadPDF = (language) => {
     let filePath = '';
 
     if (language === 'vi') {
-        filePath = '../../assets/pdf/nguyen_minh_trung_nghia_CV_vi.pdf';
+        filePath = '../../assets/pdf/nguyen_minh_trung_nghia_cv_vietnamese.pdf';
     } else {
-        filePath = '../../assets/pdf/nguyen_minh_trung_nghia_CV_en.pdf';
+        filePath = '../../assets/pdf/nguyen_minh_trung_nghia_cv_english.pdf';
     }
 
     link.href = filePath;
