@@ -16,7 +16,7 @@
       <div class="container">
         <div class="header">
           <div class="image">
-            <img src="./assets/image/JuneNghia.jpg" width="200" />
+            <img srcset="./assets/image/JuneNghia.jpg" width="200" />
           </div>
           <div class="info">
             <div data-i18n="position" class="position">Web Developer</div>
@@ -48,7 +48,10 @@
                 <span class="material-symbols-outlined item_icon">
                   public
                 </span>
-                <a class="item_content" href="https://junenghia.netlify.app/"
+                <a
+                  class="item_content"
+                  target="_blank"
+                  href="https://junenghia.netlify.app/"
                   >Trung Nghia Porfolio</a
                 >
               </div>
@@ -299,9 +302,13 @@
             Choose a language:
           </legend>
 
-          <label> <input type="radio" name="lang" value="en" /> English </label>
           <label>
-            <input type="radio" name="lang" value="vi" checked /> Tiếng Việt
+            <input type="radio" name="lang" value="en" />
+            English
+          </label>
+          <label>
+            <input type="radio" name="lang" value="vi" /> Tiếng
+            Việt
           </label>
         </fieldset>
       </form>
@@ -311,9 +318,38 @@
       <div class="container">
         <div class="body">
           <div class="part">
-            <div data-i18n="project" class="title">Project</div>
+            <div data-i18n="project" class="title">Featured Projects</div>
             <div class="content">
               <div class="projects">
+                <div class="project">
+                  <div class="logo_name">
+                    <img class="logo" src="./assets/image/bsc.png" />
+                    <p class="name">Balance Scord Card</p>
+                  </div>
+                  <div class="description">
+                    <p
+                      data-i18n="bsc_description"
+                      style="line-height: 1.4"
+                      class="description_title"
+                    >
+                      The Balanced Scorecard (BSC) Tool is a strategic
+                      performance management system used by organizations to
+                      align business activities with the vision and strategy of
+                      the company. It helps translate high-level goals into
+                      measurable objectives across four key perspectives:
+                      Financial, Customer, Internal Processes, and Learning &
+                      Growth.
+                    </p>
+                  </div>
+                  <ul class="project_info">
+                    <li class="tech">Back-end: NestJs (TypeScript)</li>
+                    <li data-i18n="hutechquiz_database" class="tech">
+                      Database: MySQL
+                    </li>
+                    <li class="tech">Front-end: ReactJs (TypeScript), MUI</li>
+                    <li class="tech">CI/CD: Docker, Github Actions</li>
+                  </ul>
+                </div>
                 <div class="project">
                   <div class="logo_name">
                     <img class="logo" src="./assets/image/hutech.jpg" />
@@ -363,7 +399,7 @@
                     </div>
                   </div>
                   <ul class="project_info">
-                    <li class="tech">Back-end: NodeJs, ExpressJs</li>
+                    <li class="tech">Back-end: ExpressJs</li>
                     <li data-i18n="hutechquiz_database" class="tech">
                       Database: Postgresql
                     </li>
@@ -427,5 +463,49 @@
     </div>
     <script src="src/js/index.js"></script>
     <script src="src/js/translator.js"></script>
+    <script>
+      let isWarningShown = false;
+
+      function isMobileDevice() {
+        return (
+          /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          ) || window.innerWidth < 768
+        );
+      }
+
+      function renderMobileWarning() {
+        document.body.innerHTML = `
+      <div id="mobile-warning" style="display:flex;justify-content:center;align-items:center;height:100vh;text-align:center;padding: 20px;">
+        <div>
+          <h2>⚠️ <span data-i18n='mobile_warning.$0'>This site is only accessible on desktop devices.</span></h2>
+          <p data-i18n='mobile_warning.$1'>Please access this site using a computer or a larger screen.</p>
+        </div>
+      </div>
+    `;
+        isWarningShown = true;
+      }
+
+      function checkDeviceAndRender() {
+        const isMobile = isMobileDevice();
+
+        if (isMobile && !isWarningShown) {
+          renderMobileWarning();
+        } else if (!isMobile && isWarningShown) {
+          // Nếu người dùng quay lại desktop, chỉ reload khi đang ở chế độ cảnh báo
+          location.reload();
+        }
+      }
+
+      // Lần đầu kiểm tra
+      checkDeviceAndRender();
+
+      // Kiểm tra khi thay đổi kích thước
+      window.addEventListener("resize", () => {
+        // Delay nhẹ để tránh bị spam khi resize quá nhanh
+        clearTimeout(window.__resizeTimeout);
+        window.__resizeTimeout = setTimeout(checkDeviceAndRender, 300);
+      });
+    </script>
   </body>
 </html>

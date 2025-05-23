@@ -7,7 +7,7 @@
   "skills": "skills",
   "experience": "EXPERIENCE",
   "education": "EDUCATION",
-  "project": "PROJECT",
+  "project": "FEATURED PROJECT",
   "cvt_company": "Full Stack Developer - CVT TECHNOLOGY COMPANY LIMITED",
   "cvt_tasks": "Do the tasks below for business website of CVT TECHNOLOGY COMPANY LIMITED:",
   "cvt_task": {
@@ -26,6 +26,7 @@
   },
   "miho_company_description": "Some sites have been developed and operated in a product environment:",
   "hutechquiz_description": "Building an online multiple-choice test system for review content of Ho Chi Minh City University of Technology - Hutech. Includes several functions:",
+  "bsc_description": "The Balanced Scorecard (BSC) is a strategic performance management tool used by organizations to align business activities to the vision and strategy of the organization. This tool helps to translate high-level strategic objectives into measurable objectives through four main perspectives: Financial, Customer, Internal Process, and Learning & Growth.",
   "cvt_time": "Jan 2023 - Present",
   "miho_time": "June 2022 - Dec 2022",
   "practice_test": "Practice Test",
@@ -38,5 +39,9 @@
   "hutech_3rd_startup": "3rd Prize in Hutech Startup Wings",
   "hutech_final_gottalent": "Entered the final round of Hutech IT Got Talent",
   "download_pdf_en": "Download PDF - English",
-  "download_pdf_vi": "Download PDF - Vietnamese"
+  "download_pdf_vi": "Download PDF - Vietnamese",
+  "mobile_warning": {
+    "$0": "This site is only accessible on desktop devices.",
+    "$1": "Please access this site using a computer or a larger screen."
+  }
 }

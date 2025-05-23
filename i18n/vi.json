@@ -7,10 +7,10 @@
   "skills": "KỸ NĂNG",
   "experience": "KINH NGHIỆM",
   "education": "HỌC VẤN",
-  "project": "DỰ ÁN",
+  "project": "DỰ ÁN TIÊU BIỂU",
   "cvt_company": "Lập trình viên Full Stack - CÔNG TY TNHH CÔNG NGHỆ CVT",
   "cvt_tasks": "Thực hiện các nhiệm vụ được giao bởi Công Ty TNHH Công Nghệ CVT:",
-  "cvt_task" : {
+  "cvt_task": {
     "$0": "Trao đổi với khách hàng / quản lý về các chức năng mong muốn phát triển.",
     "$1": "Phân tích các chức năng cần được phát triển với các thành viên trong nhóm.",
     "$2": "Thiết kế cơ sở dữ liệu.",
@@ -19,13 +19,14 @@
     "$5": "Tích hợp tương tác với API trên giao diện người dùng."
   },
   "miho_company": "Phát triển Website Wordpress - CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ MIHO",
-  "miho_task" : {
+  "miho_task": {
     "$0": "Xây dựng website quảng cáo sản phẩm, porfolio sử dụng Wordpress và các plugin mở rộng.",
     "$1": "Hỗ trợ các vấn đề liên quan đến các hệ thống công nghệ như máy in, máy tính, phần cứng, lỗi phần mềm.",
     "$2": "Giới thiệu, tư vấn cho khách hàng các sản phẩm."
   },
   "miho_company_description": "Một số trang web đã được phát triển và vận hành trong môi trường sản phẩm:",
   "hutechquiz_description": "Xây dựng hệ thống thi thử trắc nghiệm trực tuyến các nội dung ôn tập của Trường Đại Học Công Nghệ Thành Phố Hồ Chí Minh - Hutech. Bao gồm các chức năng chính: ",
+  "bsc_description": "Công cụ Thẻ điểm cân bằng (Balanced Scorecard - BSC) là một hệ thống quản lý hiệu suất chiến lược được các tổ chức sử dụng nhằm liên kết các hoạt động kinh doanh với tầm nhìn và chiến lược của doanh nghiệp. Công cụ này giúp chuyển hóa các mục tiêu chiến lược cấp cao thành những mục tiêu có thể đo lường được thông qua bốn khía cạnh chính: Tài chính, Khách hàng, Quy trình nội bộ và Học hỏi & Phát triển.",
   "cvt_time": "T1/2023 - Hiện tại",
   "miho_time": "T6/2022 - T12/2022",
   "practice_test": "Thi thử",
@@ -34,9 +35,13 @@
   "hutechquiz_database": "Cơ sở dữ liệu: Postgresql",
   "achievements": "Thành tích",
   "information_technology": "Công Nghệ Thông Tin",
-  "hutech_name":"Đại học Công nghệ Thành Phố Hồ Chí Minh - Hutech",
+  "hutech_name": "Đại học Công nghệ Thành Phố Hồ Chí Minh - Hutech",
   "hutech_3rd_startup": "Giải ba cuộc khi khởi nghiệp Hutech Startup Wings",
   "hutech_final_gottalent": "Vào vòng chung kết cuộc thi Hutech IT Got Talent",
   "download_pdf_en": "Tải xuống PDF - Tiếng Anh",
-  "download_pdf_vi": "Tải xuống PDF - Tiếng Việt"
+  "download_pdf_vi": "Tải xuống PDF - Tiếng Việt",
+  "mobile_warning": {
+    "$0": "Trang web này chỉ có thể truy cập bằng thiết bị máy tính.",
+    "$1": "Vui lòng truy cập trang web bằng máy tính hoặc màn hình lớn hơn."
+  }
 }

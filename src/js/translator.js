@@ -74,7 +74,7 @@ class Translator {
 
   get defaultConfig() {
     return {
-      persist: false,
+      persist: true,
       languages: ["en"],
       defaultLanguage: "en",
       filesLocation: "/i18n"
@@ -83,7 +83,7 @@ class Translator {
 }
 
 var translator = new Translator({
-  persist: false,
+  persist: true,
   languages: ["en", "vi"],
   defaultLanguage: "en",
   detectLanguage: true,
@@ -95,5 +95,6 @@ translator.load();
 document.querySelector("form").addEventListener("click", function(evt) {
   if (evt.target.tagName === "INPUT") {
     translator.load(evt.target.value);
+    localStorage.setItem("language", evt.target.value);
   }
 });

@@ -3,9 +3,9 @@ const downloadPDF = (language) => {
     let filePath = '';
 
     if (language === 'vi') {
-        filePath = '../../assets/pdf/nguyen_minh_trung_nghia_cv_vietnamese.pdf';
+        // filePath = '../../assets/pdf/nguyen_minh_trung_nghia_cv_vietnamese.pdf';
     } else {
-        filePath = '../../assets/pdf/nguyen_minh_trung_nghia_cv_english.pdf';
+        // filePath = '../../assets/pdf/nguyen_minh_trung_nghia_cv_english.pdf';
     }
 
     link.href = filePath;
@@ -16,5 +16,6 @@ const downloadPDF = (language) => {
 const buttonVi = document.getElementById('download_pdf_vi');
 const buttonEn = document.getElementById('download_pdf');
 
-buttonVi.onclick = () => downloadPDF('vi');
-buttonEn.onclick = () => downloadPDF('en');
+// buttonVi.onclick = () => downloadPDF('vi');
+// buttonEn.onclick = () => downloadPDF('en');
+
